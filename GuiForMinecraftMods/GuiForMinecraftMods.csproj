@@ -117,8 +117,10 @@
     <Compile Include="Migrations\ConfigurationMinecraftModes.cs" />
     <Compile Include="Models\MineCraftMmodes.cs" />
     <Compile Include="Models\MinecraftModesContext.cs" />
+    <Compile Include="Models\RunPythonScript.cs" />
     <Compile Include="Repositories\IMinecraftModesReposytory.cs" />
     <Compile Include="Repositories\MinecraftModesReposytory.cs" />
+    <Compile Include="ViewModels\Commands\RelayCommand.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

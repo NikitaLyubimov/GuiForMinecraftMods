@@ -13,7 +13,7 @@
         </Grid.RowDefinitions>
 
         <Menu>
-            <MenuItem Header="Start script"/>
+            <MenuItem Header="Start script" Command="{Binding StartScriptCommand}"/>
         </Menu>
 
         <DataGrid Padding="20" ItemsSource="{Binding ModesList}" AutoGenerateColumns="False" ColumnWidth="*" Grid.Row="1">
