@@ -7,6 +7,21 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Menu>
+            <MenuItem Header="Start script"/>
+        </Menu>
+
+        <DataGrid Padding="20" ItemsSource="{Binding ModesList}" AutoGenerateColumns="False" ColumnWidth="*" Grid.Row="1">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Title" Binding="{Binding Title}"/>
+                <DataGridTextColumn Header="Description" Binding="{Binding Description}"/>
+                <DataGridTextColumn Header="Link" Binding="{Binding Link}"/>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Window>

@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using GuiForMinecraftMods.ViewModels;
+
 namespace GuiForMinecraftMods.Views
 {
     /// <summary>
@@ -23,6 +25,7 @@ namespace GuiForMinecraftMods.Views
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = new MainWindowViewModel();
         }
     }
 }

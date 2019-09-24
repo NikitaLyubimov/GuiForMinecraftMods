@@ -10,7 +10,7 @@ namespace GuiForMinecraftMods.Repositories
 {
     interface IMinecraftModesReposytory
     {
-        IQueryable<MinecraftModes> Get();
+        IList<MinecraftModes> Get();
         MinecraftModes Get(int id);
         MinecraftModes Get(string title);
     }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 
@@ -10,18 +11,18 @@ namespace GuiForMinecraftMods.Repositories
     {
         private readonly MinecraftModesContext _minecraftModesContext;
 
-        public MinecraftModesReposytory(MinecraftModesContext context)
+        public MinecraftModesReposytory()
         {
-            _minecraftModesContext = context;
+            _minecraftModesContext = new MinecraftModesContext();
         }
 
         /// <summary>
         /// Gets all minecraft modes from database
         /// </summary>
         /// <returns></returns>
-        public IQueryable<MinecraftModes> Get()
+        public IList<MinecraftModes> Get()
         {
-            return _minecraftModesContext.Set<MinecraftModes>();
+            return _minecraftModesContext.Set<MinecraftModes>().ToList();
         }
 
         /// <summary>
