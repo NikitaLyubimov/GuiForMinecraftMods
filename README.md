@@ -1,2 +1,2 @@
 # GuiForMinecraftMods
-A very simple GUI for (https://github.com/NikitaLyubimov/MinecraftModsParser "MinecraftModesParser")
+A very simple GUI for [MinecraftModesParser](https://github.com/NikitaLyubimov/MinecraftModsParser "MinecraftModesParser")
